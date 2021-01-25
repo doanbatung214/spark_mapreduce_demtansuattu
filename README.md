@@ -35,3 +35,7 @@ Spark Core: là nền tảng của các phần còn lại đảm nhận vai trò
 + Reduce sẽ nhận khóa trung gian I và tập các giá trị ứng với khóa đó, ghép nối chúng lại để tạo thành một tập khóa nhỏ hơn. Các cặp khóa/giá trị trung gian sẽ  được đưa vào cho hàm reduce thông qua một con trỏ vị trí (iterator). Điều này cho phép ta có thể quản lý một lượng lớn danh sách các giá trị để phù hợp với bộ nhớ.
 
 Thực chất giữa bước map và reduce còn có một bước phụ mà bước này thực hiện song song với bước reduce đó là shuffle. Tức là sau khi map thực hiện xong toàn bộ công việc của mình,  output của map được đặt rải rác trên các cluster khác nhau nên shuffle sẽ làm nhiệm vụ thu thập các cặp khóa-giá trị trung gian do map sinh ra mà có cùng khóa để chuyển qua cho reduce thực hiện tiếp công việc của mình.
+# Tài liệu tham khảo
+  1. https://en.wikipedia.org/wiki/Apache_Spark
+  2. https://en.wikipedia.org/wiki/MapReduce
+  3. https://kipalog.com/posts/Tong-quan-mo-hinh-lap-trinh-MapReduce
